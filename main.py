@@ -2,7 +2,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, filters, MessageHan
 from handlers import welcome, moderation, bad_words, purge, warning, mute, ban, rules, whisper, logs
 from database.database import create_tables
 from telegram import Update
-from services.statistics import report_message, daily_report_job
+from services.statistics import report_message
 from handlers.settings import TOKEN
 from datetime import time
 from zoneinfo import ZoneInfo
